@@ -7,6 +7,7 @@ import urllib
 import argparse
 import json
 from bs4 import BeautifulSoup
+import selenium
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from pathlib import Path
@@ -38,8 +39,10 @@ def search(keyword):
     for i in range(30):
         element.send_keys(Keys.PAGE_DOWN)
         time.sleep(0.3)  # bot id protection
-
-    browser.find_element_by_id("smb").click()
+    try:
+        browser.find_element_by_id("smb").click()
+    except selenium.common.exceptions.ElementNotVisibleException:
+        print("Exception rolando...")
     print("[%] Successfully clicked 'Show More Button'.")
 
     for i in range(50):
