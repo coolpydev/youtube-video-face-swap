@@ -1,0 +1,15 @@
+linhas de comando?
+
+python 1_get_faces_from_yt.py --url="https://www.youtube.com/watch?v=dWfR4qx-09s" --start=120 --stop=300 --name="whindersson" --limit=500
+
+python 1_get_faces_from_yt.py --url="https://www.youtube.com/watch?v=vtbXWVEWl88" --start=-1 --stop=-1 --name="jair roda viva" --limit=500
+
+sudo docker build . -t ptfg_whind_jair
+
+CMD ["python3","2_train.py","--src=felipe neto","--dst=jair bolsonaro","--epochs=100000"]
+
+python3 3_youtube_face_swap.py --url="https://www.youtube.com/watch?v=ljkfkjlasdljkasfdljkasfdjlkasfdljk;asfdkjl;safd" --start=36 --stop=-1 --gif=False
+
+Muito maneirissimo manos!
+
+
