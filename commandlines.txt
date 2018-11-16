@@ -6,6 +6,8 @@ python 1_get_faces_from_yt.py --url="https://www.youtube.com/watch?v=vtbXWVEWl88
 
 sudo docker build . -t ptfg_whind_jair
 
+sudo docker run --runtime=nvidia --rm nvidia/cuda:latest nvidia-smi
+
 CMD ["python3","2_train.py","--src=felipe neto","--dst=jair bolsonaro","--epochs=100000"]
 
 python3 3_youtube_face_swap.py --url="https://www.youtube.com/watch?v=ljkfkjlasdljkasfdljkasfdjlkasfdljk;asfdkjl;safd" --start=36 --stop=-1 --gif=False
