@@ -1,0 +1,7 @@
+numpy
+keras
+h5py
+tqdm
+numpy
+opencv-python
+tensorflow-gpu

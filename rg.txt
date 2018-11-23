@@ -1,0 +1,16 @@
+bs4
+selenium
+pyvirtualdisplay
+fake_useragent
+numpy
+keras
+h5py
+tqdm
+numpy
+pytube
+moviepy
+face_recognition
+scikit-image
+opencv-python
+requests
+lxml
